@@ -15,10 +15,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Build site with Parcel
         run: npx parcel build src/*.html --dist-dir dist --public-url /practice2/
-
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
