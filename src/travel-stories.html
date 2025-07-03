@@ -7,22 +7,69 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container mt-5">
-    <h1>Travel Stories</h1>
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Travel Stories</h1>
+      <p class="lead">Real experiences from adventurers across Northern Pakistan</p>
+    </div>
+  </header>
 
-    <article class="mb-4">
-      <h3>My Trek to Fairy Meadows</h3>
-      <p><strong>Author:</strong> Ahmed Raza | <strong>Date:</strong> June 2024</p>
-      <img src="images/story1.jpg" class="img-fluid mb-2" alt="Fairy Meadows Trek">
-      <p>A once-in-a-lifetime experience at the base of Nanga Parbat...</p>
-    </article>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="./trip-planner.html">Trip Planner</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./travel-stories.html">Travel Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <article>
-      <h3>Exploring Hunza Culture</h3>
-      <p><strong>Author:</strong> Fatima Shah | <strong>Date:</strong> May 2024</p>
-      <img src="images/story2.jpg" class="img-fluid mb-2" alt="Hunza Culture">
-      <p>From forts to apricot orchards, Hunza was a delightful escape...</p>
-    </article>
-  </div>
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- Story 1 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/story1.jpg" class="card-img-top" alt="Fairy Meadows Trek">
+          <div class="card-body">
+            <h5 class="card-title">My Trek to Fairy Meadows</h5>
+            <p class="card-subtitle text-muted mb-2"><strong>Author:</strong> Ahmed Raza | <strong>Date:</strong> June 2024</p>
+            <p class="card-text">A once-in-a-lifetime experience at the base of Nanga Parbat...</p>
+          </div>
+        </div>
+      </div>
+      <!-- Story 2 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/story2.jpg" class="card-img-top" alt="Hunza Culture">
+          <div class="card-body">
+            <h5 class="card-title">Exploring Hunza Culture</h5>
+            <p class="card-subtitle text-muted mb-2"><strong>Author:</strong> Fatima Shah | <strong>Date:</strong> May 2024</p>
+            <p class="card-text">From forts to apricot orchards, Hunza was a delightful escape...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <div class="container">
+      <p class="mb-0">© 2025 TravelEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (deferred) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
